@@ -1,5 +1,4 @@
-﻿using System.IO;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Mp3Player.Core.IO;
 using Mp3Player.TestHelpers;
 using NUnit.Framework;

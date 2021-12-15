@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
+
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{889820D6-3677-431F-9148-59CEEBD1A010}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9B7FDE54-710E-4D6A-B6C8-85363AED8256}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1E1DC0F6-13C4-4481-9DA8-D1D37C9F7689}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		.sonarlint\IMIcsharp.ruleset = .sonarlint\IMIcsharp.ruleset
+		Directory.Build.props = Directory.Build.props
+		IMI.runsettings = IMI.runsettings
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestHelpers", "TestHelpers", "{FE8C9A31-67B4-4675-A238-5742A8201E44}"

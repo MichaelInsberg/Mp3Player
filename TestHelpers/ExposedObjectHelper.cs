@@ -37,7 +37,9 @@ namespace Mp3Player.TestHelpers
         /// <returns>
         /// The <see cref="bool"/>.
         /// </returns>
+#pragma warning disable S3776 // Cognitive Complexity of methods should not be too high
         internal static bool InvokeBestMethod(object[] args, object target, List<MethodInfo> instanceMethods, out object result)
+#pragma warning restore S3776 // Cognitive Complexity of methods should not be too high
         {
             if (instanceMethods.Count == 1)
             {

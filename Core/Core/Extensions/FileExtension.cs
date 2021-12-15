@@ -17,7 +17,7 @@ namespace Mp3Player.Core.Extensions
         /// </returns>
         public static bool HasSize(this FileInfo fileInfo, int sizeInByte = 0)
         {
-            return fileInfo.Exists && fileInfo.Length >= sizeInByte;
+            return fileInfo != null && fileInfo.Exists && fileInfo.Length >= sizeInByte;
         }
     }
 }

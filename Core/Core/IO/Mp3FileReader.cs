@@ -20,7 +20,7 @@ namespace Mp3Player.Core.IO
         /// <returns>The MP3 file information</returns>
         /// <exception cref="System.ArgumentNullException">fileName</exception>
         /// <exception cref="System.ArgumentException">The {nameof(fileName)} has not the minimal file site of {FileConstants.MINIMAL_ALLOWED_MP3_BYTE_FILE_SIZE} byte</exception>
-        public async Task<Mp3FileInformation>ReadFileAsync(string fileName)
+        public Task<Mp3FileInformation>ReadFileAsync(string fileName)
         {
             if (string.IsNullOrWhiteSpace(fileName))
             {
@@ -33,7 +33,7 @@ namespace Mp3Player.Core.IO
                     $"The {nameof(fileName)} has not the minimal file site of {FileConstants.MINIMAL_ALLOWED_MP3_BYTE_FILE_SIZE} byte");
             }
 
-            return await GetMp3FileInformationAsync(fileName);
+            return GetMp3FileInformationAsync(fileName);
         }
 
         /// <summary>
