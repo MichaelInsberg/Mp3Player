@@ -3,11 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{889820D6-3677-431F-9148-59CEEBD1A010}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{889820D6-3677-431F-9148-59CEEBD1A010}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tools", "Tools\Tools\Tools.csproj", "{DC9A8744-42CD-44D0-96E8-C82AE1EEF646}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9B7FDE54-710E-4D6A-B6C8-85363AED8256}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tools.Tests", "Tools\Tools.Tests\Tools.Tests.csproj", "{5DB2E346-2DA2-4A2D-B033-4456EE340D49}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestHelpers", "TestHelpers", "{FE8C9A31-67B4-4675-A238-5742A8201E44}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHelpers", "TestHelpers\TestHelpers.csproj", "{F90612ED-FB38-4C0D-9D2D-A3D29B9C1393}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core\Core.csproj", "{BEE4113F-9877-4D19-B4A6-5E4FAFAA4049}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Tests", "Core\Core.Tests\Core.Tests.csproj", "{F7FEC9A3-045A-4DD8-8167-141A82E6ECDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,21 +24,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DC9A8744-42CD-44D0-96E8-C82AE1EEF646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DC9A8744-42CD-44D0-96E8-C82AE1EEF646}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DC9A8744-42CD-44D0-96E8-C82AE1EEF646}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC9A8744-42CD-44D0-96E8-C82AE1EEF646}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5DB2E346-2DA2-4A2D-B033-4456EE340D49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5DB2E346-2DA2-4A2D-B033-4456EE340D49}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5DB2E346-2DA2-4A2D-B033-4456EE340D49}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5DB2E346-2DA2-4A2D-B033-4456EE340D49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F90612ED-FB38-4C0D-9D2D-A3D29B9C1393}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F90612ED-FB38-4C0D-9D2D-A3D29B9C1393}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F90612ED-FB38-4C0D-9D2D-A3D29B9C1393}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F90612ED-FB38-4C0D-9D2D-A3D29B9C1393}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE4113F-9877-4D19-B4A6-5E4FAFAA4049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE4113F-9877-4D19-B4A6-5E4FAFAA4049}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE4113F-9877-4D19-B4A6-5E4FAFAA4049}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE4113F-9877-4D19-B4A6-5E4FAFAA4049}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7FEC9A3-045A-4DD8-8167-141A82E6ECDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7FEC9A3-045A-4DD8-8167-141A82E6ECDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7FEC9A3-045A-4DD8-8167-141A82E6ECDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7FEC9A3-045A-4DD8-8167-141A82E6ECDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{DC9A8744-42CD-44D0-96E8-C82AE1EEF646} = {889820D6-3677-431F-9148-59CEEBD1A010}
-		{5DB2E346-2DA2-4A2D-B033-4456EE340D49} = {889820D6-3677-431F-9148-59CEEBD1A010}
+		{F90612ED-FB38-4C0D-9D2D-A3D29B9C1393} = {FE8C9A31-67B4-4675-A238-5742A8201E44}
+		{BEE4113F-9877-4D19-B4A6-5E4FAFAA4049} = {889820D6-3677-431F-9148-59CEEBD1A010}
+		{F7FEC9A3-045A-4DD8-8167-141A82E6ECDE} = {889820D6-3677-431F-9148-59CEEBD1A010}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5A34C782-D9B8-4A57-BE6F-69400B097453}

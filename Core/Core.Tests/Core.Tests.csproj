@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net5.0</TargetFramework>
+	  <RootNamespace>$(SolutionName).$(MSBuildProjectName)</RootNamespace>
+	  <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	  <Product>Framework 4.0</Product>
+	  <Authors>Michael Insberg</Authors>
+	  <Company>IMI</Company>
+  </PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<OutputPath>$(SolutionDir)\Build\Debug</OutputPath>
+		<DocumentationFile>$(SolutionDir)\Docs\$(MSBuildProjectName).xml</DocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<OutputPath>$(SolutionDir)\Build\Release</OutputPath>
+		<DocumentationFile>$(SolutionDir)\Docs\$(MSBuildProjectName).xml</DocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
+	  <PackageReference Include="Moq" Version="4.16.1" />
+	  <PackageReference Include="NUnit" Version="3.13.2" />
+	  <PackageReference Include="SonarAnalyzer.CSharp" Version="8.33.0.40503">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\TestHelpers\TestHelpers.csproj" />
+	  <ProjectReference Include="..\Core\Core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="TestMp3\Death Grips - Get Got.mp3">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	  <None Update="TestMp3\DefectFile.mp3">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+</Project>

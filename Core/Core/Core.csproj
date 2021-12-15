@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net5.0</TargetFramework>
@@ -18,5 +18,17 @@
 		<OutputPath>$(SolutionDir)\Build\Release</OutputPath>
 		<DocumentationFile>$(SolutionDir)\Docs\$(MSBuildProjectName).xml</DocumentationFile>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="ID3" Version="0.6.0" />
+	  <PackageReference Include="SonarAnalyzer.CSharp" Version="8.33.0.40503">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Utilities\" />
+	</ItemGroup>
 
 </Project>
