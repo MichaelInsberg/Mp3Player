@@ -7,6 +7,7 @@
 	  <Product>Framework 4.0</Product>
 	  <Authors>Michael Insberg</Authors>
 	  <Company>IMI</Company>
+	  <SatelliteResourceLanguages>de;en-US</SatelliteResourceLanguages>
   </PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -34,11 +35,12 @@
 	  <ProjectReference Include="..\Core\Core.csproj" />
 	</ItemGroup>
 
+
 	<ItemGroup>
-	  <None Update="TestMp3\Death Grips - Get Got.mp3">
+	  <None Update="Mp3TestFiles\Death Grips - Get Got.mp3">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
-	  <None Update="TestMp3\DefectFile.mp3">
+	  <None Update="Mp3TestFiles\DefectFile.mp3">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
 	</ItemGroup>

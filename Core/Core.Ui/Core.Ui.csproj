@@ -1,13 +1,15 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net5.0</TargetFramework>
+		<TargetFramework>net5.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
 		<RootNamespace>$(SolutionName).$(MSBuildProjectName)</RootNamespace>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<Product>Framework 4.0</Product>
 		<Authors>Michael Insberg</Authors>
 		<Company>IMI</Company>
 	</PropertyGroup>
+
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
 		<OutputPath>$(SolutionDir)\Build\Debug</OutputPath>
@@ -20,15 +22,19 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="ID3" Version="0.6.0" />
-	  <PackageReference Include="SonarAnalyzer.CSharp" Version="8.33.0.40503">
-	    <PrivateAssets>all</PrivateAssets>
-	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-	  </PackageReference>
+		<PackageReference Include="SonarAnalyzer.CSharp" Version="8.33.0.40503">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Services\" />
+	  <Folder Include="ViewModels\" />
+	  <Folder Include="Views\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Core\Core.csproj" />
 	</ItemGroup>
 
 </Project>

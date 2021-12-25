@@ -12,7 +12,7 @@ namespace Mp3Player.Core.Tests
     [TestFixture]
     public class Mp3FileReaderTests : TestBase<Mp3FileReader>
     {
-        private const string DEATH_GRIPS_GET_GOT = @".\TestMp3\Death Grips - Get Got.mp3";
+        private const string DEATH_GRIPS_GET_GOT = @".\Mp3TestFiles\Death Grips - Get Got.mp3";
 
         /// <summary>
         /// Reads the file asynchronous result should be valid values.

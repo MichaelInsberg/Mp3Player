@@ -1,4 +1,4 @@
-﻿namespace Mp3Player.Core.DataClasses
+﻿namespace Mp3Player.Core.Constants
 {
     /// <summary>
     /// The file constants class

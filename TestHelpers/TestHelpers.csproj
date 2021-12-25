@@ -7,6 +7,7 @@
 		<Product>Framework 4.0</Product>
 		<Authors>Michael Insberg</Authors>
 		<Company>IMI</Company>
+		<SatelliteResourceLanguages>de;en-US</SatelliteResourceLanguages>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
